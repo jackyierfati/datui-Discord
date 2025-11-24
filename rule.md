@@ -100,20 +100,29 @@
 ## 4.3 Action Model
 
 ### Unknown（可教型）
-```text
+```
 if state == unknown:
     educate()
     no_removal()
+```
 
 ### Ignorance（無知型）
+```
 if state == ignorance:
     warn(1)
     warn(2)
     remove(3)
+```
 
-### Severe Case（纯傻逼）
+### Severe Case
+```
 if severe == True:
     remove(immediate)
+```
+
+Highest Admin 可跳級執行 `remove()`。
+
+---
 
 ## 5. Ideological Constraints
 禁止宣傳以下意識形態（討論不在此限）：
@@ -149,5 +158,3 @@ if severe == True:
 ---
 
 **End of Document**
-
-
